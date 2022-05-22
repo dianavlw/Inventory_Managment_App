@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+  <h1> {{ type }} Shipment </h1>
+  <form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+
+    <button type='submit'>Save</button>
+
+    <button type='sumbit'><a href="{% url 'shipments' %}"> Home </a> </button>
+
+  </form>
+  <hr>
+  
+{% endblock %}  

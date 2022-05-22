@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+
+  <h1>
+    Description Changed!  
+  </h1>
+  <p><b> Products and Warehouse Details </b></p>
+  <div>
+    <p> Shipment ID : <b>{{ shipment.id }} </b></p> 
+    <p> Warehouse ID: <b>{{ shipment.warehouses.name }}</b></p> 
+    <p> Warehouse Location: <b>{{ shipment.warehouses.location }}</b></p>  
+    <p> Warehouse Phone Number: <b>{{ shipment.warehouses.phone }}</b></p>  
+    <p> Shipment Name : <b>{{ shipment.products.name }}</b></p> 
+    <p> Shipment Quantity : <b>{{ shipment.products.quantity }}</b></p> 
+    <p> Shipment Quantity : <b>{{ shipment.products.description }}</b></p> 
+   </div> 
+
+  <hr>
+  <button type='sumbit'><a href="{% url 'shipments' %}"> Home </a> </button>
+
+ 
+{% endblock %}
