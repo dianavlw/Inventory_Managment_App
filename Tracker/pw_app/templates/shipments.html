@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+  <h1>
+    Shipments
+  </h1>
+  
+  <hr>
+  <a href="{% url 'new_shipment' %}"><button type='submit'>Add new Shipment</button></a>
+
+  {% for shipment in all_shipments %}
+
+  <div class="center">
+    <table>
+    <tr>
+      <th> Product ID </th>
+      <th> Product NAME </th>
+      <th> Product QUANTITY </th>
+      <th> Warehouse ID </th>
+      <th> Edit </th>
+      <th>Delete</th>
+
+    </tr>
+    <tr>
+      <td>{{ shipment.products.id }}</td>
+      <td>{{ shipment.products.name }}</td>
+      <td>{{ shipment.products.quantity }}</td>
+      <td>{{ shipment.warehouses }}</td>
+     
+      <!-- EDIT SHIPMENT -->
+      <td><a href="{% url 'shipment_edit' shipment_id=shipment.id %}"><button type='submit'>Edit SHIPMENT</button></a>
+      </td>
+
+      <!-- VIEW SHIPMENT -->
+ 
+
+       
+ 
+
+      <!-- DELETE SHIPMENT  -->
+      <td><a href="{% url 'delete_shipment' shipment_id=shipment.id %}"><button type='submit'>Delete</button>
+      </tr>
+    </table>
+  </div>
+  {% endfor %}
+  <hr>
+
+  <button type='sumbit'><a href="{% url 'shipments' %}"> Home </a> </button>
+  
+  <hr>
+  {% endblock %}

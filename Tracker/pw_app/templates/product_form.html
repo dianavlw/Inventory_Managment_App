@@ -6,8 +6,11 @@
   <form method="POST">
     {% csrf_token %}
     {{ form.as_p }}
+
+
     <button type='submit'>Save</button>
-    <button type='sumbit'><a href="{% url 'products' %}"> Home </a> </button>
+
   </form>
+
 
 {% endblock %}  

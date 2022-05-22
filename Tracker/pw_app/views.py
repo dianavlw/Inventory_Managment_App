@@ -80,3 +80,4 @@ def delete_warehouse(request, product_id, warehouse_id):
         warehouse = Warehouse.objects.get(id=warehouse_id)
         warehouse.delete()
     return redirect('product_description', product_id=product_id)
+
