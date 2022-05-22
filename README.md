@@ -1,5 +1,4 @@
-Fall 2022 - Shopify
-Developer Intern Challenge Question
+
 
 Requirements:
 Basic CRUD Functionality. You should be able to:
@@ -25,3 +24,4 @@ python3 server.py
 
 DEVELOPER:
 Diana Vargas
+https://www.linkedin.com/in/dianavl/
