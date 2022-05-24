@@ -1,5 +1,4 @@
 
-Fall 2022 - Shopify Developer Intern Challenge Question
 
 PROJECT DETAILS:
 -Requirements: Basic CRUD Functionality. You should be able to:
